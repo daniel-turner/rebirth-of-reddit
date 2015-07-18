@@ -2,11 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Reddot</title>
+  <title>Fastenate | The World's Most Awesome Board of Stuff</title>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
-  <h1>and</h1>
-</body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div id="headerContainer">
+            <a href="https://www.google.com/">
+              <div id="headerLogoImage"></div>
+            </a>
+          <div id="headerLargeClicky">
+            <a>+</a>
+          </div>
+        </div>
+      </header>
+      <nav class="nav">
+        <ul class="menuList">
+          <li id="menu1" onclick="Data.loadRandom()"><a>RANDOM</a></li>
+          <div class="dotDiv">.</div>
+          <li id="menu2" onclick="Data.loadMyBoards()"><a>MY BOARDS</a></li>
+          <div class="dotDiv">.</div>
+          <li id="menu3" onclick="Data.loadGetTheApp()"><a>GET THE APP</a></li>
+        </ul>
+      </nav>
+      <div class="mainDisplay">
+        <ul class="articleList clearfix">
+          <li id="article1" class="article">
+            <div id="imageContainer1" class="imageContainer">
+              <img id="image1" class="image">
+            </div>
+            <h2 id="title1" class="articleTitle">Funny & Cute Animals Compilation 2014 New</h2>
+            <h3 class="articleMeta">
+              <span id="byline1" class="byline">by funfunnycomic</span>
+              <div>.</div>
+              <span id="age1" class="age">4 months ago</span>
+              <div>.</div>
+              <span id="views1" class="views">680,636 views</span>
+            </h3>
+            <p id="text1" class="articleText">Funny and Cute Animals Compilation 2014 New, Hilarious Animals Compilation 2014, Fun,funny,hilarious dogs,horses,goat,cats,...</p>
+          </li>
+          <li id="article2" class="article">
+            <div id="imageContainer2" class="imageContainer">
+              <img id="image2" class="image">
+            </div>
+            <h2 id="title2" class="articleTitle">Top 10 Cutest Animal Videos</h2>
+            <h3 class="articleMeta">
+              <span id="byline2" class="byline">by SpastiClips</span>
+              <div>.</div>
+              <span id="age2" class="age">2 years ago</span>
+              <div>.</div>
+              <span id="views2" class="views">501,174 views</span>
+            </h3>
+            <p id="text2" class="articleText">PLEASE LiKE, COMMENT AND SHARE - Thank you for your support! New Compilations of Fails and more every week in best...</p>
+          </li>
+          <li id="article3" class="article">
+            <div id="imageContainer3" class="imageContainer">
+              <img id="image3" class="image">
+            </div>
+            <h2 id="title3" class="articleTitle">Animals Love Bath Time- Super Cute Compilation</h2>
+            <h3 class="articleMeta">
+              <span id="byline3" class="byline">by MrFunnyMals</span>
+              <div>.</div>
+              <span id="age3" class="age">1 year ago</span>
+              <div>.</div>
+              <span id="views3" class="views">250,252 views</span>
+            </h3>
+            <p id="text3" class="articleText">Most peope think that animals just hate taking bath, but this super cute compilation will prove them wrong. These animals...</p>
+          </li>
+          <li id="article4" class="article">
+            <div id="imageContainer4" class="imageContainer">
+              <img id="image4" class="image">
+            </div>
+            <h2 id="title4" class="articleTitle">Cute animals waking each other up - Funny animal compilation</h2>
+            <h3 class="articleMeta">
+              <span id="byline4" class="byline">by Tiger Productions</span>
+              <div>.</div>
+              <span id="age4" class="age">3 months ago</span>
+              <div>.</div>
+              <span id="views4" class="views">1,910,984 views</span>
+            </h3>
+            <p id="text4" class="articleText">It's so cute and funny when one animal wants to play with another who is tired and sleepy. Some sleepy animals are very patient...</p>
+          </li>
+        </ul>
+      </div>
+      <footer class="footer">
+        <ul class="footerList">
+          <li id="footerItem1"><a></a></li>
+          <li id="footerItem2"><a></a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/moment.js"></script>
+    <script>
+
+    window.onload = function() {
+
+      Data.loadRandom();
+    };
+    </script>
+  </body>
 </html>
